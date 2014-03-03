@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.25)  27 FEB 2014 15:14
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.25)  3 MAR 2014 15:13
 entering extended mode
 **cs-cp.tex
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\cs-cp.tex
@@ -296,20 +296,16 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\introduction.tex)
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\reusecientificwork.tex)
-(C:\Users\agarrido\Documents\GitHub\cs-cp\src\reviewerfinder.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--10
-
- []
-
-[1
+(C:\Users\agarrido\Documents\GitHub\cs-cp\src\reviewerfinder.tex [1
 
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
- [2])
-(C:\Users\agarrido\Documents\GitHub\cs-cp\src\evaluation.tex)
+ []
+
+[2]) (C:\Users\agarrido\Documents\GitHub\cs-cp\src\evaluation.tex)
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\conclusions.tex)
 No file cs-cp.bbl.
 [3]
@@ -322,7 +318,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  3179 strings out of 493921
  43512 string characters out of 3144867
- 107908 words of memory out of 3000000
+ 105908 words of memory out of 3000000
  6439 multiletter control sequences out of 15000+200000
  7578 words of font info for 30 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -334,7 +330,7 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on cs-cp.pdf (3 pages, 96146 bytes).
+Output written on cs-cp.pdf (3 pages, 96936 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
