@@ -1,32 +1,29 @@
 %introducción
-The Reviewer finder is illustrated by the APA prototype that we have developed. It consists on a web application that covers the process of finding a good reviewer for a specific article or publication. The whole process is driven by the actions performed by the user while creating different contexts towards his/her final objective. Each action allows the modification of the search parameters in an intuitive way and offers summaries of information that may help on understanding the available resources.\\
-%descripción de la interfaz
-The user interface has been designed in order to keep a minimalist layout that makes user experience smooth and simple. This simplicity does not renounce to provide the content needed by te users in the aim of getting the desired results. The main part of the screen displays a set of concentric circles that serve both as a playground to customize the search and as a front of the most relevant results of the search. 
-The center of the circles contains the article for which we are looking for reviewers. The immediate adjacent circle is the place where the user can define different contexts (each context created is equivalent to a search) by adding and removing authors and articles. The two external circles collect the most relevant reviewers that the system has found in order to tackle the main article together with the context that surrounds it.
-Other aspect that is covered by the Collaboration Spheres is the usage of a color code and warning icons when showing the results on the circles. The colors follow the traffic-light metaphor, where green represents the best reviewers, yellow is used for other good reviewers and red is used for the less (but still) recommended reviewers. As we evaluate possible conflicts between the reviewers and the article to be reviewed, we are able to warn the users by adding a warning icon for those recommendations where conflict has been detected (author, previous co-author or same organization are examples of conflicts in our scenario). 
-On the right of the screen there are two different columns that gather three distinct lists each. The first column focuses on authors at different levels: 
-\begin{enumerate}
-  \item The first level shows the main authors of the article.
-  \item The second level shows other authors that had collaborated with the main authors in previous publications.
-  \item The third level presents a set of relevant authors whose work share one or more topics with the main article.
-\end{enumerate}
-A parallel approach has been taken for the second column which focuses on articles at three different levels:
-\begin{enumerate}
-  \item The first level shows other articles authored by the main authors.
-  \item The second level shows  a set of articles authored by previous co-authors.
-  \item The third level presents a set of relevant articles that have related topics with the main article.
-\end{enumerate}  
-Every element from the lists is draggable and can be dropped at the circles. The drag-and-drop action allows the user to create their customized context in the Collaboration Spheres.
-Every time that a new element is added to the context, a tag cloud that is placed under the circles gets updated. This tag cloud represents the key topics for the created contexts and provides an informative abstraction of the search at a simple glance. Some of the elements at the tag cloud are a link to their corresponding Wikipedia and APA Thesaurus URIs.
-Apart from that, it is worth to mention that every element is clickable in order to get a summary of its contents, together with the link to the resource itself in the VIVO platform enhancing the users exploration. A twitter search for the most relevant topics of every element is provided with the intention of adding a nice feature of pointing topic appearance in social networks.\\
-
-%descripción de las acciones y los resultados
-%intro
-The architecture and implementation of the system can be easily divided into three independent modules. Each module provides the needed information to the others creating a complete system.
-%módulo de datos
-The first module is the data module. The base data used in our scenario is provided by the VIVO APA platform. It consists on an RDF dataset that holds authors and publications that belong to the Psychology domain, together with additional information for each element and the relations between them. One of our tasks related to this dataset has been an information enrichment. Topics form the abstracts and titles have been extracted through NLP techniques and tools for each publication. One of the tools used to perform this task has been TextRazor\footnote{\url{http://www.textrazor.com/} TextRazor provides topic extraction and additional Wikipedia URIs for different categories.} through its API. The second tool that has been used is KT (Knowledge Tagger) working together with a Thesaurus for the psychology domain provided by the APA. Post-processing calculations are used in order to add a weight value for each topic in every article. These topic weights together with the knowledge of the authors that provides the dataset allows the assessment of expertise values for each author. The dataset together with tne new relations and the added values are stored in a Virtuoso Triplestore. The Triplestore is accessible via HTTP queries that are posted by the next module:the Web Services.
-%módulo web services
-The Web Services is in charge of communicating the data form the Data Module to the Front End. It is a web project that triggers different SPARQL queries by using JENA under user request. The results of the queries are processed and returned via REST-JSON web services that respond to the Front End. Some filtering of the data and improvements are done in the Java project, but they are kept as minimum as possible. In this way we try to reduce the impact of this module and use it as a communication channel between the other modules. The power of the Web Services resides on the complex SPARQL queries and the ability to handle user requests.
-%módulo front
-Finally, the Front End Module offers a web application with a browsable interface that is directly available for the users. It has been developed in HTML5, using also javascript, jQuery and CSS. The interface reacts to user actions and throws different Ajax queries to the REST Web Services. Once the JSON response is obtained it is parsed in order to show the results to the users and update the interface as expected. The final result offers a smooth experience that retrieves data through recommendations under user demand. 
-
+In this scenario the editor in chief of the Journal of Personality and Social Psychology\footnote{\url{http://www.apa.org/pubs/journals/psp/}} is trying to select reviewers for a submission they have just received. The first step will be to open the collaboration spheres for that Article: 
+\begin{itemize}
+  \item The selected Article is called "Attachment change processes in the early years of marriage" \footnote{\url{http://vivo.apa.org/individual/n61963}}.
+  \item Then we can launch the Collaboration Spheres for the Article \footnote{\url{http://apaproject.isoco.com/index.html?id=http://vivo.apa.org/individual/n61963}}.
+\end{itemize}
+As we can see, the Article the tag cloud shows the most relevant topics for the Article placed in the center of the Collaboration Spheres and we get a preliminary set of recommended reviewers for it.\\
+Since we want to define a bit better the topics for our context, i.e. the special issue, and, in order to get better recommendations, we will add an article of our interest (can be found at the “Articles by Topic section), which is very related to the topics of the special issue. We select the following article in the “Articles by topic” panel on the right and drag and drop it into the blue circle of the context of interest:
+\begin{itemize}
+  \item The added article is "Adult attachment and the transition to parenthood" \footnote{\url{http://vivo.apa.org/individual/n5724}}.
+\end{itemize}
+Now the editor in chief will include some of the members of the Editorial Board (Interpersonal Relations and Group Processes Section\footnote{\url{http://www.apa.org/pubs/journals/psp/edboard-irgp.aspx}}), who will serve as exemplars of the knowledge required to properly evaluate the submissions which are received. Suitable reviewers will therefore be knowledgeable of (part of) those topics. This way we increase the alignment between the related topics in the expertise of our editors and the recommended experts for reviewing the article. In this case, the editor in chief adds:
+\begin{itemize}
+  \item Consulting Editors:
+  \begin{itemize}
+    \item Bolger, Niall
+    \item Algoe, Sara B.
+  \end{itemize}
+  \item Associate Editors:
+  \begin{itemize}
+      \item Finkel, Eli J.
+      \item Gable, Shelly L.
+  \end{itemize}
+\end{itemize}
+We can see at every addition how the main topics change in the tag cloud and how the recommendations are adjusted to the context. When the editor in chief adds the last of the associate editors, the relevance of the different related topics seems to be uniformly distributed. The editor in chief then may want to reconsider the composition of the board and replace some of the editors (e.g. Gable with another expert with knowledge about other topics more, which the editor in chief finds especially relevant for the special issue).  In this case, the editor in chief selects an author who brings in expertise related to topics like alcohol abuse:
+\begin{itemize}
+  \item W. Zywiak
+\end{itemize}
+In addition to the summary that we provide for each author and article, the system can also launch a Twitter search that covers his/her/its intersection with the most relevant topics of the context of interest.
