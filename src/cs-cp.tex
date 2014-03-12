@@ -25,10 +25,10 @@
 %
 \mainmatter              % start of the contributions
 %
-\title{Semantic Publishing - Research Life Cycle}
+\title{Keeping scientific materials alive and reusable by supporting collaboration}
 
 %
-\titlerunning{Semantic Publishing - Research Life Cycle}  % abbreviated title (for running head)
+\titlerunning{Keeping scientific materials alive and reusable by supporting collaboration}  % abbreviated title (for running head)
 %                                     also used for the TOC unless
 %                                     \toctitle is used
 %
@@ -45,7 +45,7 @@ Partenon, 16-18, 1-7, 28042, Madrid, Spain,\\
 \email{\{agarrido,jmgomez,bvillazon\}@isoco.com}}
 
 
-%\maketitle              % typeset the title of the contribution
+\maketitle              % typeset the title of the contribution
 
 %**************************************************************
 %**************************************************************
@@ -53,21 +53,47 @@ Partenon, 16-18, 1-7, 28042, Madrid, Spain,\\
 
 
 \begin{abstract}
-
-
+Data-intensive scientific knowledge faces many issues such as the decrease of quality of materials and the difficulties on finding relevant information. Those aspects need to be addressed in order to enhance the future of scientific development. This article presents a set of tools focused on reusability of scientific information based on two different aspects: collaboration and search. We present a visual metaphor called Collaboration Spheres which allow search through exploration of scientific social networks based on a combination of people and information objects. This search paradigm is built around the use of customizable contexts that act as intuitive examples conducted by the users. This tool eases collaboration, expert finding and access to relevant information.
 \end{abstract}
 
 \section{Introduction}\label{sec:Introduction}
 \input{introduction}
 
-\section{Reuse of scientific work}\label{sec:RelatedWork}
-\input{reusecientificwork}
+%\section{Reuse of scientific work}\label{sec:RelatedWork}
+%\input{reusecientificwork}
+
+
 
 \section{Reviewer finder}\label{sec:Motivation}
 \input{reviewerfinder}
 
-\section{Evaluation}\label{sec:Evaluation}
-\input{evaluation}
+\section{Dataset description}
+Vocabularies
+
+\begin{tabular}{ l l l }
+  1 & VIVO Ontology & http://vivoweb.org/ontology/core \\
+  2 & BIBO Ontology & http://purl.org/ontology/bibo \\
+  3 & FAO Geopolotical  & http://aims.fao.org/aos/geopolitical.owl \\
+  4 & Vitro Application Ontology  & http://vitro.mannlib.cornell.edu/ns/vitro/0.7 \\
+  5 & FOAF  & http://xmlns.com/foaf/0.1 \\
+  6 & SKOS  & http://www.w3.org/2004/02/skos/core \\
+  7 & iSOCO vocab & http://vocab.isoco.net \\ 
+  8 & Event Ontology & http://purl.org/NET/c4dm/event.owl \\       
+\end{tabular}
+
+Some stats
+
+\begin{tabular}{ l r  }
+  Number of triples & 2605589 \\
+  Number of links &   123606  \\
+  Number of authors & 12090   \\
+  Number of papers & 17386 \\
+  Number of topics & 465706 \\
+\end{tabular}
+
+
+%\section{Evaluation}\label{sec:Evaluation}
+%\input{evaluation}
 
 
 \section{Conclusions and Future Work}\label{sec:Conclusions}
