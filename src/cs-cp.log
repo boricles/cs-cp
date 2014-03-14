@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.25)  11 MAR 2014 17:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.25)  14 MAR 2014 13:12
 entering extended mode
 **cs-cp.tex
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\cs-cp.tex
@@ -276,22 +276,35 @@ LaTeX Font Info:    ... okay on input line 18.
 \everyMPtoPDFconversion=\toks24
 )
 \c@lstlisting=\count136
-LaTeX Font Info:    Try loading font information for U+msa on input line 60.
+LaTeX Font Info:    Try loading font information for U+msa on input line 48.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+LaTeX Font Info:    Try loading font information for U+msb on input line 48.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 48.
+
+LaTeX Font Info:    No file OMScmtt.fd. on input line 48.
+
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 48.
+
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\introduction.tex)
-(C:\Users\agarrido\Documents\GitHub\cs-cp\src\reusecientificwork.tex)
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\reviewerfinder.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
+[1
+
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -301,38 +314,42 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+ [2]) [3]
+Overfull \hbox (0.61066pt too wide) in paragraph at lines 73--83
+[][] 
+ []
 
-
-
-])
-(C:\Users\agarrido\Documents\GitHub\cs-cp\src\evaluation.tex) [2]
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\conclusions.tex)
 No file cs-cp.bbl.
-[3]
+[4]
 No file cs-cp.ind.
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\subjidx.ind.tex)
-(C:\Users\agarrido\Documents\GitHub\cs-cp\src\cs-cp.aux) ) 
+(C:\Users\agarrido\Documents\GitHub\cs-cp\src\cs-cp.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3189 strings out of 493921
- 43687 string characters out of 3144867
- 103908 words of memory out of 3000000
- 6442 multiletter control sequences out of 15000+200000
- 9662 words of font info for 38 fonts, out of 3000000 for 9000
+ 3192 strings out of 493921
+ 43509 string characters out of 3144867
+ 103892 words of memory out of 3000000
+ 6448 multiletter control sequences out of 15000+200000
+ 10434 words of font info for 41 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,9n,32p,683b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb>
-Output written on cs-cp.pdf (3 pages, 105154 bytes).
+ 29i,9n,32p,866b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on cs-cp.pdf (4 pages, 136881 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
