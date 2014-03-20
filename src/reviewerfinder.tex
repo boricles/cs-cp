@@ -1,10 +1,6 @@
 %introducción
-The Reviewer finder is illustrated by a web application that covers the process
-of finding a good reviewer for a specific article or publication. The process is
-driven by actions performed by the user while creating different contexts
-towards his/her final objective. Each action allows the modification of the
-search parameters in an intuitive way and offers summaries of information that
-may help on understanding the available resources.\\
+The Collaboration Spheres are illustrated by a web application that covers the process
+of finding a good reviewer for a specific article or publication. The Collaboration Spheres are a visual metaphor of concentric circles where the most important part (the article) the level of importance decreases as we move away from the center. The metaphor is helped by the use of intuitive colors and iconography. In that way, the user experiences a level of trust based on closeness. The process is driven by actions performed by the user while creating different contexts near the article towards his/her final objective which is to find good reviewers. Each action allows the modification of the search parameters in an intuitive way and offers summaries of information that may help on understanding the available resources.\\
 \subsection{Interface Description}
 The user interface has been designed in order to keep a minimalist layout that
 makes user experience smooth and simple. The screen is easily divided in four
@@ -27,7 +23,7 @@ lists. The lists on the first column are: list of authors of the main article,
 list of previous co-authors of the main authors and a list of authors which have
 worked on related topics to the article to be reviewed. The lists on the second
 column are: articles of the main authors, articles of previous co-authors and
-topic related articles. All the items of the lists are draggable and can be
+topic related articles. By preselecting the listed item we ease the task for the user by removing non relevant information and keeping only elements oriented for the recommendation task. All the items of the lists are draggable and can be
 dropped on the Spheres in order to customize the context.
 \item[Tag Cloud]A tag cloud that gathers the most representative topics of the
 contexts that are created by the user is placed beneath the Spheres. The tag
@@ -35,7 +31,7 @@ cloud allows the understanding of the search and results at a glance.
 \item[Information box]Each element of the lists and the spheres is clickable. If
 they are clicked, a box of information placed on the right-bottom corner of the
 screen loads a brief summary of information, together with a link to its uri and
-a list of relevant topics for the current context.
+a list of relevant topics for the current context. The purpose of this box is to offer quick summaries of every element that the user wants to inspect without the need of leaving the Collaboration Spheres page.
 \end{description}
 \begin{figure}[!hbt]
 \centering
@@ -45,18 +41,9 @@ a list of relevant topics for the current context.
 \end{figure}
 \subsection{Basic Architecture}
 The architecture of the system consists of three modules. Each module provides
-the needed information to the others creating a complete system:
+the needed information to the others creating a complete system.
 \begin{description}
-\item[Data Module]The developed platform uses data provided by the APA VIVO,
-which is an RDF dataset holding authors, publications and additional data from
-the psychology domain. The base dataset is enriched with topics from the titles
-and abstracts that have been extracted using the
-TextRazor\footnote{\url{http://www.textrazor.com/} TextRazor provides topic
-extraction and additional Wikipedia URIs for different categories.} API and KT
-(Knowledge Tagger) working together with a Thesaurus. Post-processing
-calculations are used in order to add a weight value for each topic in every
-article and to assess an expertise value to the authors. The data is stored in a
-Virtuoso Triplestore accessible via HTTP queries.
+\item[Data Module]The Collaboration Spheres use data provided by the APA VIVO\footnote{\url{https://vivo.apa.org/}} platform, which is an RDF dataset holding authors, publications and additional data from the psychology domain. The base dataset is imported to our repository, transformed and with topics from the titles and abstracts that have been extracted using the TextRazor\footnote{\url{http://www.textrazor.com/} TextRazor provides topic extraction and additional Wikipedia URIs for different categories.} API and KT (Knowledge Tagger) working together with a Thesaurus. The transformation and enrichment using topics for the authors and articles are made in order to get an explicit represenation that improves the querying process in terms of complexity and time. The Post-processing calculations are used to add a weight value for each topic in every article and to assess an expertise value to the authors. These assigned weights are the key part of the recommendation. The final dataset is stored in a Virtuoso Triplestore accessible via HTTP SPARQL queries.
 \item[Web Services]The communications between the Data Module and the Front End are performed by the Web Services. It is a web project that triggers different SPARQL queries by using JENA under user request. The results are processed and returned via REST-JSON to the Front End.
 \item[Front End]A web application with a browsable interface that is directly available for the users. The interface reacts to user actions and throws different Ajax queries to the REST Web Services. It has been developed in HTML5, using also javascript, jQuery and CSS. 
 \end{description}

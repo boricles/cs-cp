@@ -25,10 +25,10 @@
 %
 \mainmatter              % start of the contributions
 %
-\title{Keeping scientific materials alive and reusable by supporting collaboration}
+\title{Who Reviews this Article? Collaboration Spheres in support of Scholarly Publication}
 
 %
-\titlerunning{Keeping scientific materials alive and reusable by supporting collaboration}  % abbreviated title (for running head)
+\titlerunning{Who Reviews this Article? Collaboration Spheres in support of Scholarly Publication}  % abbreviated title (for running head)
 %                                     also used for the TOC unless
 %                                     \toctitle is used
 %
@@ -53,7 +53,7 @@ Partenon, 16-18, 1-7, 28042, Madrid, Spain,\\
 
 
 \begin{abstract}
-Data-intensive scientific knowledge faces many issues such as the decrease of quality of materials and the difficulties on finding relevant information. Those aspects need to be addressed in order to enhance the future of scientific development. This article presents a set of tools focused on reusability of scientific information based on two different aspects: collaboration and search. We present a visual metaphor called Collaboration Spheres which allow search through exploration of scientific social networks based on a combination of people and information objects. This search paradigm is built around the use of customizable contexts that act as intuitive examples conducted by the users. This tool eases collaboration, expert finding and access to relevant information.
+Science is incremental and cyclic. New breakthroughs are built on top of previous results which will themselves be the basis for future developments once validated by peer scientists and accepted for publication in scholarly communications. However, the process of identifying suitable reviewers for a particular article can be cumbersome and costly. Not only do journal editors need to have a thorough, personal knowledge of their journals and the members of the community who can be suitable reviewers but also they must have an eye for spotting potential conflicts of interest that may raise biased reviews. Thus, means are required that assist editors in order to identify suitable reviewers amongst members of scientific communities. In this paper we present an expert finding system based on the application of the Collaboration Spheres search-by-example visual interface, to the case of the American Psychologic Association, a publishing body with over 70 journals, 54 interest groups, and 134,000 members, including researchers, educators, clinicians, consultants and students. We show how we enriched APA's previously existing RDF data model and produced an extended dataset which explicitly materializes the relationships between authors, articles, and their organizations. Based on this dataset we describe a service layer implemented as a set of SPARQL queries which feeds the Collaboration Spheres interface and enables the required expert finding capabilities. 
 \end{abstract}
 
 \section{Introduction}\label{sec:Introduction}
@@ -67,29 +67,8 @@ Data-intensive scientific knowledge faces many issues such as the decrease of qu
 \section{Reviewer finder}\label{sec:Motivation}
 \input{reviewerfinder}
 
-\section{Dataset description}
-Vocabularies
+%\section{Dataset description}
 
-\begin{tabular}{ l l l }
-  1 & VIVO Ontology & http://vivoweb.org/ontology/core \\
-  2 & BIBO Ontology & http://purl.org/ontology/bibo \\
-  3 & FAO Geopolotical  & http://aims.fao.org/aos/geopolitical.owl \\
-  4 & Vitro Application Ontology  & http://vitro.mannlib.cornell.edu/ns/vitro/0.7 \\
-  5 & FOAF  & http://xmlns.com/foaf/0.1 \\
-  6 & SKOS  & http://www.w3.org/2004/02/skos/core \\
-  7 & iSOCO vocab & http://vocab.isoco.net \\ 
-  8 & Event Ontology & http://purl.org/NET/c4dm/event.owl \\       
-\end{tabular}
-
-Some stats
-
-\begin{tabular}{ l r  }
-  Number of triples & 2605589 \\
-  Number of links &   123606  \\
-  Number of authors & 12090   \\
-  Number of papers & 17386 \\
-  Number of topics & 465706 \\
-\end{tabular}
 
 
 %\section{Evaluation}\label{sec:Evaluation}
