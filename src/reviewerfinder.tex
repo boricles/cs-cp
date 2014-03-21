@@ -1,6 +1,6 @@
 %introducción
 The Collaboration Spheres are implemented as a web application that covers the process
-of finding a good reviewer for a specific article or publication. The Collaboration Spheres are a visual metaphor of concentric circles where the most important part (the article) the level of importance decreases as we move away from the center. The metaphor is helped by the use of intuitive colors and iconography. In that way, the user experiences a level of trust based on closeness. The process is driven by actions performed by the user while creating different contexts near the article towards his/her final objective which is to find good reviewers. A context is a group of articles and authors surrounding the main article that are taken as the parameters of the search. Each action allows the modification of context in an intuitive way and offers summaries of information that may help on understanding the available resources.\\
+of finding a good reviewer for a specific article or publication. The Collaboration Spheres are a visual metaphor of concentric circles where the most important part (the article) is placed in the center. The level of importance decreases as we move away from the center. The metaphor is helped by the use of intuitive colors and iconography. In that way, the user experiences a level of trust based on closeness. The process is driven by actions performed by the user while creating different contexts near the article towards his/her final objective which is to find good reviewers. A context is a group of articles and authors surrounding the main article that are taken as the parameters of the search. Each action allows the modification of context in an intuitive way and offers summaries of information that may help on understanding the available resources.\\
 \subsection{Interface Description}
 The user interface has been designed in order to keep a minimalist layout that
 makes user experience smooth and simple. The screen is easily divided in four
@@ -35,7 +35,7 @@ a list of relevant topics for the current context. The purpose of this box is to
 \end{description}
 \begin{figure}[!hbt]
 \centering
-\includegraphics[scale=0.3]{img/CollabAPA.png}
+\includegraphics[scale=0.2]{img/CollabAPA.png}
 \caption{User interface screenshot}
 \label{fig:screenshot}
 \end{figure}
@@ -43,13 +43,13 @@ a list of relevant topics for the current context. The purpose of this box is to
 The architecture of the system consists of three modules. Each module provides
 the needed information to the others creating a complete system.
 \begin{description}
-\item[Data Module]The Collaboration Spheres use data provided by the APA VIVO\footnote{\url{https://vivo.apa.org/}} platform, which is an RDF dataset holding authors, publications and additional data from the psychology domain. The base dataset is imported to our repository, transformed and with topics from the titles and abstracts that have been extracted using the TextRazor\footnote{\url{http://www.textrazor.com/} TextRazor provides topic extraction and additional Wikipedia URIs for different categories.} API and KT (Knowledge Tagger) working together with a Thesaurus. The transformation and enrichment using topics for the authors and articles are made in order to get an explicit represenation that improves the querying process in terms of complexity and time. The Post-processing calculations are used to add a weight value for each topic in every article and to assess an expertise value to the authors. These assigned weights are the key part of the recommendation. The final dataset is stored in a Virtuoso Triplestore accessible via HTTP SPARQL queries.
+\item[Data Module]The Collaboration Spheres use data provided by the APA VIVO\footnote{\url{https://vivo.apa.org/}} platform, which is an RDF dataset holding authors, publications and additional data from the psychology domain. The base dataset is imported to our repository, transformed and with topics from the titles and abstracts that have been extracted using the TextRazor\footnote{\url{http://www.textrazor.com/} TextRazor provides topic extraction and additional Wikipedia URIs for different categories.} API and KT (Knowledge Tagger) working together with a Thesaurus. The transformation and enrichment using topics for the authors and articles are made in order to get an explicit representation that improves the querying process in terms of complexity and time. The post-processing calculations are used to add a weight value for each topic in every article and to assess an expertise value to the authors. These assigned weights are the key part of the recommendation. The final dataset is stored in a Virtuoso Triplestore accessible via HTTP SPARQL queries.
 \item[Web Services]The communications between the Data Module and the Front End are performed by the Web Services. It is a web project that triggers different SPARQL queries by using JENA under user request. The results are processed and returned via REST-JSON to the Front End.
 \item[Front End]A web application with a browsable interface that is directly available for the users. The interface reacts to user actions and throws different Ajax queries to the REST Web Services. It has been developed in HTML5, using also javascript, jQuery and CSS. 
 \end{description}
 \begin{figure}[!hbt]
 \centering
-\includegraphics[scale=0.3]{img/APAarchitecture.jpg}
+\includegraphics[scale=0.25]{img/APAarchitecture.jpg}
 \caption{Basic architecture}
 \label{fig:arch}
 \end{figure}

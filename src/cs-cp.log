@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.25)  20 MAR 2014 18:40
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.25)  21 MAR 2014 10:03
 entering extended mode
 **cs-cp.tex
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\cs-cp.tex
@@ -309,7 +309,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 File: img/CollabAPA.png Graphic file (type png)
  <use img/CollabAPA.png>
 Package pdftex.def Info: img/CollabAPA.png used on input line 38.
-(pdftex.def)             Requested size: 231.49162pt x 173.44933pt.
+(pdftex.def)             Requested size: 154.32382pt x 115.62994pt.
 
 Overfull \hbox (2.00742pt too wide) in paragraph at lines 46--47
 []\OT1/cmr/m/n/10 The Col-lab-o-ra-tion Spheres use data pro-vided by the APA V
@@ -322,7 +322,7 @@ File: img/APAarchitecture.jpg Graphic file (type jpg)
 
 <use img/APAarchitecture.jpg>
 Package pdftex.def Info: img/APAarchitecture.jpg used on input line 52.
-(pdftex.def)             Requested size: 216.81166pt x 162.60875pt.
+(pdftex.def)             Requested size: 180.67455pt x 135.5059pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -335,7 +335,7 @@ Missing character: There is no ù in font cmr10!
  [4 <C:/Users/agarrido/Documents/GitHub/cs-cp/src/img/APAarchitecture.jpg>])
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\conclusions.tex)
 No file cs-cp.bbl.
-[5] [6]
+[5]
 No file cs-cp.ind.
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\subjidx.ind.tex)
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\cs-cp.aux)
@@ -346,7 +346,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  3208 strings out of 493921
  43783 string characters out of 3144867
- 103908 words of memory out of 3000000
+ 104908 words of memory out of 3000000
  6459 multiletter control sequences out of 15000+200000
  10434 words of font info for 41 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -361,9 +361,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on cs-cp.pdf (6 pages, 385549 bytes).
+Output written on cs-cp.pdf (5 pages, 385879 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
