@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.25)  20 MAR 2014 16:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.25)  21 MAR 2014 10:46
 entering extended mode
 **cs-cp.tex
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\cs-cp.tex
@@ -295,7 +295,12 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              for symbol `textbraceleft' on input line 48.
 
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\introduction.tex)
-(C:\Users\agarrido\Documents\GitHub\cs-cp\src\reviewerfinder.tex [1
+(C:\Users\agarrido\Documents\GitHub\cs-cp\src\reviewerfinder.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+
+ []
+
+[1
 
 
 
@@ -303,25 +308,25 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 <img/CollabAPA.png, id=12, 771.63281pt x 578.16pt>
 File: img/CollabAPA.png Graphic file (type png)
  <use img/CollabAPA.png>
-Package pdftex.def Info: img/CollabAPA.png used on input line 24.
+Package pdftex.def Info: img/CollabAPA.png used on input line 25.
 (pdftex.def)             Requested size: 231.49162pt x 173.44933pt.
 
-<img/APAarchitecture.jpg, id=13, 722.7pt x 542.025pt>
+[2] [3 <C:/Users/agarrido/Documents/GitHub/cs-cp/src/img/CollabAPA.png>]
+<img/APAarchitecture.jpg, id=20, 722.7pt x 542.025pt>
 File: img/APAarchitecture.jpg Graphic file (type jpg)
 
 <use img/APAarchitecture.jpg>
-Package pdftex.def Info: img/APAarchitecture.jpg used on input line 40.
+Package pdftex.def Info: img/APAarchitecture.jpg used on input line 42.
 (pdftex.def)             Requested size: 216.81166pt x 162.60875pt.
- [2])
-(C:\Users\agarrido\Documents\GitHub\cs-cp\src\datasetinformation.tex [3 <C:/Use
-rs/agarrido/Documents/GitHub/cs-cp/src/img/CollabAPA.png>]
+)
+(C:\Users\agarrido\Documents\GitHub\cs-cp\src\datasetinformation.tex
 Overfull \hbox (0.61066pt too wide) in paragraph at lines 4--14
 [][] 
  []
 
-) (C:\Users\agarrido\Documents\GitHub\cs-cp\src\conclusions.tex)
+[4]) (C:\Users\agarrido\Documents\GitHub\cs-cp\src\conclusions.tex)
 No file cs-cp.bbl.
-[4 <C:/Users/agarrido/Documents/GitHub/cs-cp/src/img/APAarchitecture.jpg>]
+[5 <C:/Users/agarrido/Documents/GitHub/cs-cp/src/img/APAarchitecture.jpg>]
 No file cs-cp.ind.
 (C:\Users\agarrido\Documents\GitHub\cs-cp\src\cs-cp.aux)
 
@@ -329,24 +334,25 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 3206 strings out of 493921
- 43790 string characters out of 3144867
- 106916 words of memory out of 3000000
- 6459 multiletter control sequences out of 15000+200000
- 10126 words of font info for 40 fonts, out of 3000000 for 9000
+ 3208 strings out of 493921
+ 43811 string characters out of 3144867
+ 104916 words of memory out of 3000000
+ 6460 multiletter control sequences out of 15000+200000
+ 10434 words of font info for 41 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,9n,32p,1345b,232s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on cs-cp.pdf (4 pages, 354562 bytes).
+ 29i,9n,32p,1641b,232s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on cs-cp.pdf (5 pages, 371587 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
