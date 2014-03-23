@@ -12,6 +12,7 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{subscript}
+\usepackage{verbatim}
 \lstset{breaklines=true, basicstyle=\scriptsize\ttfamily}
 
 %
@@ -32,7 +33,8 @@
 %                                     also used for the TOC unless
 %                                     \toctitle is used
 %
-\author{Aleix Garrido\inst{1} \and Jose Manuel Gomez-Perez\inst{1} \and Boris Villazon-Terrazas\inst{1}}
+\author{Aleix Garrido\inst{1} \and Jose Manuel Gomez-Perez\inst{1} \and Hal Warren\inst{2} \and \\ Boris Villazon-Terrazas\inst{1}}
+
 %
 \authorrunning{Garrido et al.}   % abbreviated author list (for running head)
 %
@@ -42,7 +44,10 @@
 \institute{
 iSOCO, Intelligent Software Components S.A., Av. del
 Partenon, 16-18, 1-7, 28042, Madrid, Spain,\\
-\email{\{agarrido,jmgomez,bvillazon\}@isoco.com}}
+\email{\{agarrido,jmgomez,bvillazon\}@isoco.com} \and
+American Psychological Association, Washington, DC, USA\\
+\email{hwarren@apa.org}
+}
 
 
 \maketitle              % typeset the title of the contribution
@@ -53,7 +58,8 @@ Partenon, 16-18, 1-7, 28042, Madrid, Spain,\\
 
 
 \begin{abstract}
-Science is an incremental process. New breakthroughs are built on top of previous results which will themselves be the basis for future developments once validated and accepted for publication. However, identifying suitable reviewers for a particular article is not an easy task. Not only do journal editors need to have a thorough, personal knowledge of their journals and the members of the community who can be suitable reviewers but also they must have an eye for spotting potential conflicts of interest that may raise biased reviews. Thus, means are required that help editors in order to identify suitable reviewers for an article. In this paper we present an expert finding system based on the application of the Collaboration Spheres search-by-example visual interface, to the case of the American Psychologic Association, a publishing body with over 70 journals and 134,000 members. We show how we enriched APA's existing RDF data model and produced an extended dataset with additional relations and information. Based on this dataset we describe a service layer which feeds the Collaboration Spheres and enables the expert finding capabilities. 
+Science is an incremental process. New breakthroughs are built on top of previous results which will themselves be the basis for future developments once validated and accepted for publication. However, identifying suitable reviewers for a particular article is not an easy task. Not only do journal editors need to have a thorough, personal knowledge of their journals and the members of the community who can be suitable reviewers but also they must have an eye for spotting potential conflicts of interest that may raise biased reviews. Thus, means are required that help editors in order to identify suitable reviewers for an article. In this paper we present an expert finding system based on the application of the Collaboration Spheres search-by-example visual interface, to the case of the American Psychologic Association, a publishing body with over 70 journals and 134,000 members. 
+%We show how we enriched APA's existing RDF data model and produced an extended dataset with additional relations and information. Based on this dataset we describe a service layer which feeds the Collaboration Spheres and enables the expert finding capabilities. 
 \end{abstract}
 
 \section{Introduction and motivation}\label{sec:Introduction}
@@ -65,8 +71,8 @@ Science is an incremental process. New breakthroughs are built on top of previou
 \section{Expert finder}\label{sec:Motivation}
 \input{reviewerfinder}
 
-\section{Dataset Information}\label{sec:DataInfo}
-\input{datasetinformation}
+%\section{Dataset Information}\label{sec:DataInfo}
+%\input{datasetinformation}
 
 %\section{Evaluation}\label{sec:Evaluation}
 %\input{evaluation}
@@ -81,7 +87,7 @@ Science is an incremental process. New breakthroughs are built on top of previou
 
 \section*{Acknowledgments}
 
-This work was supported by SmartContent project.
+This work was supported by SmartContent (TSI-020602-2012-201) project.
 %and PARLANCE (www.parlanceproject.eu, grant number 287615).
 
 
