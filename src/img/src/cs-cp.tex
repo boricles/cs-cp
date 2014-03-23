@@ -1,0 +1,109 @@
+% This is LLNCS.DEM the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+% version 2.3 for LaTeX2e
+%
+\documentclass{llncs}
+%
+\usepackage{makeidx}  % allows for indexgeneration
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{subscript}
+\lstset{breaklines=true, basicstyle=\scriptsize\ttfamily}
+
+%
+\begin{document}
+%
+\frontmatter          % for the preliminaries
+%
+\pagestyle{headings}  % switches on printing of running heads
+%\addtocmark{Hamiltonian Mechanics} % additional mark in the TOC
+%
+%
+\mainmatter              % start of the contributions
+%
+\title{Who Reviews this Article? Collaboration Spheres in support of Scholarly Publication}
+
+%
+\titlerunning{Who Reviews this Article? Collaboration Spheres in support of Scholarly Publication}  % abbreviated title (for running head)
+%                                     also used for the TOC unless
+%                                     \toctitle is used
+%
+\author{Aleix Garrido\inst{1} \and Jose Manuel Gomez-Perez\inst{1} \and Hal Warren\inst{2} \and \\ Boris Villazon-Terrazas\inst{1}}
+%
+\authorrunning{Garrido et al.}   % abbreviated author list (for running head)
+%
+%%%% list of authors for the TOC (use if author list has to be modified)
+%\tocauthor{Panos Alexopoulos, Manolis Wallace}
+%
+\institute{
+iSOCO, Intelligent Software Components S.A., Av. del
+Partenon, 16-18, 1-7, 28042, Madrid, Spain,\\
+\email{\{agarrido,jmgomez,bvillazon\}@isoco.com} \and
+American Psychological Association, Washington, DC, USA\\
+\email{hwarren@apa.org}
+}
+
+\maketitle              % typeset the title of the contribution
+
+%**************************************************************
+%**************************************************************
+%**************************************************************
+
+
+\begin{abstract}
+Science is incremental and cyclic. New breakthroughs are built on top of previous results, which will themselves be the basis for future developments once validated by peer scientists and accepted for publication in scholarly communications. However, the process of identifying suitable reviewers for a particular article can be cumbersome and costly. Not only do journal editors need to have a thorough, personal knowledge of their journals and the members of the community who can be suitable reviewers, but also they must have an eye for spotting potential conflicts of interest that may raise biased reviews. Thus, means are required that assist editors in order to identify suitable reviewers amongst members of scientific communities. In this paper we present an expert finding system based on the application of the Collaboration Spheres search-by-example visual interface, to the case of the American Psychologic Association (APA), a publishing body with over 70 journals, 54 interest groups, and 134000 members, including researchers, educators, clinicians, consultants and students. We show how we enriched APA's previously existing RDF data model and produced an extended dataset, which explicitly materializes the relationships between authors, articles, and their organizations. Based on this dataset we describe a service layer implemented as a set of SPARQL queries which feeds the Collaboration Spheres interface and enables the required expert finding capabilities. 
+\end{abstract}
+
+\vspace{-5mm}
+\section{Introduction}\label{sec:Introduction}
+\input{introduction}
+
+%\section{Reuse of scientific work}\label{sec:RelatedWork}
+%\input{reusecientificwork}
+
+\vspace{-5mm}
+\section{Expert finder}\label{sec:Motivation}
+\input{reviewerfinder}
+
+%\section{Dataset description}
+
+
+
+%\section{Evaluation}\label{sec:Evaluation}
+%\input{evaluation}
+
+
+%\section{Conclusions and Future Work}\label{sec:Conclusions}
+%\input{conclusions}
+
+%*****************************************************************************************************************
+
+
+\vspace{-5mm}
+\section*{Acknowledgments}
+This work was supported by SmartContent (TSI-020602-2012-201) project.
+%and PARLANCE (www.parlanceproject.eu, grant number 287615).
+
+
+
+% ---- Bibliography ----
+%
+\vspace{-5mm}
+\bibliography{cs-cp}
+\bibliographystyle{plain}
+
+
+
+\clearpage
+\addtocmark[2]{Author Index} % additional numbered TOC entry
+\renewcommand{\indexname}{Author Index}
+\printindex \clearpage
+\addtocmark[2]{Subject Index} % additional numbered TOC entry
+\markboth{Subject Index}{Subject Index}
+\renewcommand{\indexname}{Subject Index}
+\input{subjidx.ind} 
+\end{document}
